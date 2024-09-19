@@ -5,12 +5,10 @@ on: [push]
 jobs:
   hola:
     runs-on: ubuntu-latest
-  
-  steps:
-    - name: "Hello, World!"
-      run: echo "Hello, World!"
 
-
+    steps:
+    - name: Print "Hola mundo!!!"
+      run: echo "Hola mundo!!!"
 #  build:
 #    steps:
 #    - name: Checkout code
