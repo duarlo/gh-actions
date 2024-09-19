@@ -3,19 +3,30 @@ name: Hola mundo!!!
 on: [push]
 
 jobs:
+
   hola:
     runs-on: ubuntu-latest
 
     steps:
     - name: Print "Hola mundo!!!"
       run: echo "Hola mundo!!!"
+
+    - name: touch file
+      run: touch hello.txt
+
+    - name: Set text
+      run: echo "hola mundo" >> hello.txt
+
+    - name: Read file
+      run: cat hello.txt
+
   other:
     runs-on: ubuntu-latest
 
     steps:
     - name: List
       run: ls -la
-      
+
 #  build:
 #    steps:
 #    - name: Checkout code
