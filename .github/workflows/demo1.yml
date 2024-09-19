@@ -9,6 +9,13 @@ jobs:
     steps:
     - name: Print "Hola mundo!!!"
       run: echo "Hola mundo!!!"
+  other:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: List
+      run: ls -la
+      
 #  build:
 #    steps:
 #    - name: Checkout code
