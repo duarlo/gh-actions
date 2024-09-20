@@ -19,4 +19,7 @@ jobs:
         steps:
             - name: Configure GitHub Pages
               uses: actions/configure-pages@v5.0.0
+
+            - name: holaM
+              uses: ./.github/actions/my-actions
     
