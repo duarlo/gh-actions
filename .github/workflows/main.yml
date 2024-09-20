@@ -1,0 +1,16 @@
+name: neofetches
+
+on: [push]
+
+jobs: 
+    neofetch:
+       runs-on:  debian-latest
+
+       steps:
+        - name: install-packages
+          run: |
+            sudo apt-get update
+            sudo apt-get install neofetch
+
+        - name: neofetch
+          run: neofetch
