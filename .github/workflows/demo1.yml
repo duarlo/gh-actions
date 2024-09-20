@@ -27,7 +27,11 @@ jobs:
     - name: List
       run: ls -la
 
+    - name: prueba
+      run: ls -l 
+
 # Comentario de user
+
 
 #  build:
 #    steps:
