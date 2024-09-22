@@ -21,8 +21,8 @@ jobs:
               uses: actions/configure-pages@v5.0.0
             
             - name: Check code
-              uses: actions/checkout@v3
+              uses: actions/checkout
 
             - name: holaM
-              uses: ./.github/actions/my-actions/
+              uses: ./.github/actions/my-actions
     
