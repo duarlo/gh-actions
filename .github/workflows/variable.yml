@@ -11,4 +11,6 @@ jobs:
 
         steps:
             - name: Var
-              run: echo "Valor $MY_VAR"
+              env:
+                My-Var: mas variables de entorno
+              run: echo "Valor $MY_VAR $My-Var"
