@@ -13,4 +13,4 @@ jobs:
             - name: Var
               env:
                 My-Var: mas variables de entorno
-              run: echo "Valor $MY_VAR $My-Var"
+              run: echo "Valor $MY_VAR $My_Var"
