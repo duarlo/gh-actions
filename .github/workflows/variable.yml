@@ -10,5 +10,5 @@ jobs:
             MY_VAR: Mi variable de entorno
 
         steps:
-            -name: Test
-            run: echo "Valor"
+            - name: Var
+              run: echo "Valor $MY_VAR"
