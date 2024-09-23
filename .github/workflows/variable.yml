@@ -1,0 +1,14 @@
+name: variable
+
+on: [push, pull_request]
+
+jobs:
+    var:
+        runs-on: ubuntu-latest
+
+        env:
+            MY_VAR: Mi variable de entorno
+
+        steps:
+            -name: Test
+            run: echo "Valor"
